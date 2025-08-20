@@ -20,8 +20,8 @@ const pool = mysql.createPool({
 });
 
 // Health check
-app.get('/health', (req, res) => {
-  res.send('School API is running 🚀');
+app.get("/", (req, res) => {
+  res.send("🎉 Scholarly API is live! Use /schools or other endpoints.");
 });
 
 // Add School API
